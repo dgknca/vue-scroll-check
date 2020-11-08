@@ -79,7 +79,7 @@ npm i vue-scroll-check
 </script>
 
 <style>
-  /* Don't forget that! The root element must be scrollable. */
+  /* Don't forget that! The scrollAreaClass must be scrollable. */
   .list {
     height: 500px;
     overflow: auto;
