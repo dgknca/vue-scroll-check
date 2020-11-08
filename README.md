@@ -4,7 +4,7 @@ A simple component based on Vue.js. Tests the scroll position at the top, bottom
 
 ## Demo
 
-[Live Demo](https://vue-scroll-check.vercel.app/)
+[Live Demo](https://vue-scroll-check.vercel.app/) | [Codesandbox](https://codesandbox.io/s/vue-scroll-check-6b3x0)
 
 ### Install
 
