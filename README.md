@@ -14,13 +14,14 @@ npm i vue-scroll-check
 
 ## Props
 
-| Prop       | Description                      |  Type  | Default |
-| :--------- | :------------------------------- | :----: | :-----: |
-| :threshold | Threshold value of event change. | Number |    0    |
+| Props      | Description                              |  Type  | Default |
+| :--------- | :--------------------------------------- | :----: | :-----: |
+| classes    | Classes of the component's root element. | String |         |
+| :threshold | Threshold value of event change.         | Number |    0    |
 
 ## Events
 
-| Event         |
+| Events        |
 | :------------ |
 | onBottomReach |
 | onBottomLeave |
@@ -28,3 +29,59 @@ npm i vue-scroll-check
 | onTopLeave    |
 | onMiddleEnter |
 | onMiddleLeave |
+
+## Usage
+
+```html
+<v-scroll-check
+  classes="list"
+  :threshold="100"
+  @onBottomReach="onBottomReach"
+  @onBottomLeave="onBottomLeave"
+  @onTopReach="onTopReach"
+  @onTopLeave="onTopLeave"
+  @onMiddleEnter="onMiddleEnter"
+  @onMiddleLeave="onMiddleLeave"
+>
+  <!-- Send your contents as slot -->
+  <div class="item" v-for="i in 50" :key="i">Item {{ i }}</div>
+</v-scroll-check>
+
+<script>
+  import VScrollCheck from 'vue-scroll-check'
+
+  export default {
+    components: {
+      VScrollCheck
+    },
+    methods: {
+      onBottomReach() {
+        console.log('onBottomReach')
+      },
+      onBottomLeave() {
+        console.log('onBottomLeave')
+      },
+      onTopReach() {
+        console.log('onTopReach')
+      },
+      onTopLeave() {
+        console.log('onTopLeave')
+      },
+      onMiddleEnter() {
+        console.log('onMiddleEnter')
+      },
+      onMiddleLeave() {
+        console.log('onMiddleLeave')
+      }
+    }
+  }
+</script>
+
+<style>
+  /* Don't forget that! The root element must be scrollable. */
+  .list {
+    height: 500px;
+    overflow: auto;
+  }
+</style>
+```
