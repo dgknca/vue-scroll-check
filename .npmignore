@@ -1,0 +1,10 @@
+# Build files
+node_modules
+
+# Documentation files
+README.md
+
+# Config files
+.gitignore
+.prettierrc
+package-lock.json
