@@ -14,10 +14,11 @@ npm i vue-scroll-check
 
 ## Props
 
-| Props      | Description                              |  Type  | Default |
-| :--------- | :--------------------------------------- | :----: | :-----: |
-| classes    | Classes of the component's root element. | String |         |
-| :threshold | Threshold value of event change.         | Number |    0    |
+| Props           | Description                                          |  Type  | Default |
+| :-------------- | :--------------------------------------------------- | :----: | :-----: |
+| containerClass  | Classes of the component's root element.             | String |         |
+| scrollAreaClass | Classes of the component's scrollable child element. | String |         |
+| :threshold      | Threshold value of event change.                     | Number |    0    |
 
 ## Events
 
@@ -34,7 +35,7 @@ npm i vue-scroll-check
 
 ```html
 <v-scroll-check
-  classes="list"
+  scrollAreaClass="list"
   :threshold="100"
   @onBottomReach="onBottomReach"
   @onBottomLeave="onBottomLeave"

@@ -7,7 +7,7 @@
     <div class="container">
       <div class="left">
         <pre v-highlightjs><code class="html">&lt;v-scroll-check
-  classes="list"
+  scrollAreaClass="list"
   :threshold="100"
   @onBottomReach="onBottomReach"
   @onBottomLeave="onBottomLeave"
@@ -71,9 +71,11 @@ export default {
       <div class="right">
         <pre
           class="demo-pre"
-        ><code><span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"list {{ atTop }}{{ atBottom }}{{ inMiddle }}"</span><span style="color:#8a31b9">></span>...<span style="color:#8a31b9">&lt;/div></span></code></pre>
+        ><code><span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"{{ atTop }}{{ atBottom }}{{ inMiddle }}"</span><span style="color:#8a31b9">></span>
+  <span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"list"</span><span style="color:#8a31b9">></span>...<span style="color:#8a31b9">&lt;/div></span>
+<span style="color:#8a31b9">&lt;/div></span></code></pre>
         <v-scroll-check
-          classes="list"
+          scrollAreaClass="list"
           :threshold="100"
           @onBottomReach="onBottomReach"
           @onBottomLeave="onBottomLeave"
@@ -198,11 +200,14 @@ body {
 
 .demo-pre {
   margin-bottom: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  width: 300px;
 }
 
 .demo-pre code {
-  padding: 10px;
-  background: #f9f9f9;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .hljs {

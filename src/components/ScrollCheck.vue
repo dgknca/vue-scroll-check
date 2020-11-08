@@ -1,20 +1,26 @@
 <template>
   <div
     :class="[
-      classes,
+      containerClass,
       { atTop: isAtTop, atBottom: isAtBottom, inMiddle: isInMiddle }
     ]"
-    @scroll="handleScroll"
   >
-    <slot></slot>
+    <div :class="scrollAreaClass" @scroll="handleScroll">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    classes: {
-      type: String
+    containerClass: {
+      type: String,
+      default: ''
+    },
+    scrollAreaClass: {
+      type: String,
+      default: ''
     },
     threshold: {
       type: Number,

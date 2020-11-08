@@ -1,11 +1,17 @@
 {
   "name": "vue-scroll-check",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "keywords": [
+    "vue component",
+    "vue scroll",
+    "vue scroll detect",
+    "vue scroll bottom reach detect"
+  ],
   "devDependencies": {
     "vue": "^2.6.11",
     "vue-highlightjs": "^1.3.3",
@@ -19,5 +25,10 @@
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgknca/vue-scroll-check.git"
   }
 }
