@@ -1,6 +1,6 @@
 # vue-scroll-check
 
-A simple component based on Vue.js. Tests the scroll position at the top, bottom and middle.
+A simple component based on Vue.js. Detects if an element has scrolled to bottom, top or middle in itself.
 
 ## Demo
 
