@@ -53,12 +53,13 @@ export default {
 &lt;style>
 .list {
   width: 300px;
-  height: 500px;
-  overflow: auto;
   box-shadow: 0 10px 20px rgba(#404040, 0.15);
   border-radius: 10px;
   background: #fff;
   padding: 8px;
+  /* Don't forget that! The scrollAreaClass must have  a height and overflow: auto or scroll. */
+  height: 500px;
+  overflow: auto;
 }
 
 .item {
