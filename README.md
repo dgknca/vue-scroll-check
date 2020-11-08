@@ -8,6 +8,8 @@ A simple component based on Vue.js. Detects if an element has scrolled to bottom
 
 ### Install
 
+[![NPM](https://nodei.co/npm/vue-scroll-check.png?downloads=true&downloadRank=true)](https://nodei.co/npm/vue-scroll-check/)
+
 ```bash
 npm i vue-scroll-check
 ```
