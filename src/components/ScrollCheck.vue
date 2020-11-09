@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       hasScrolledToBottom: false,
-      isAtTop: false,
+      isAtTop: true,
       isAtBottom: false,
       isInMiddle: false,
       isInitialTop: true

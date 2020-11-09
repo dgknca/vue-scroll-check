@@ -7,6 +7,7 @@
     <div class="container">
       <div class="left">
         <pre v-highlightjs><code class="html">&lt;v-scroll-check
+  containerClass="my-container"
   scrollAreaClass="list"
   :threshold="100"
   @onBottomReach="onBottomReach"
@@ -57,7 +58,7 @@ export default {
   border-radius: 10px;
   background: #fff;
   padding: 8px;
-  /* Don't forget that! The scrollAreaClass must have  a height and overflow: auto or scroll. */
+  /* Don't forget that! The scrollAreaClass must be scrollable. */
   height: 500px;
   overflow: auto;
 }
@@ -72,10 +73,11 @@ export default {
       <div class="right">
         <pre
           class="demo-pre"
-        ><code><span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"{{ atTop }}{{ atBottom }}{{ inMiddle }}"</span><span style="color:#8a31b9">></span>
+        ><code><span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"my-container {{ atTop }}{{ atBottom }}{{ inMiddle }}"</span><span style="color:#8a31b9">></span>
   <span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"list"</span><span style="color:#8a31b9">></span>...<span style="color:#8a31b9">&lt;/div></span>
 <span style="color:#8a31b9">&lt;/div></span></code></pre>
         <v-scroll-check
+          containerClass="my-container"
           scrollAreaClass="list"
           :threshold="100"
           @onBottomReach="onBottomReach"
@@ -102,7 +104,7 @@ export default {
   },
   data() {
     return {
-      atTop: '',
+      atTop: 'atTop',
       atBottom: '',
       inMiddle: ''
     }
