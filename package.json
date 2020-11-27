@@ -3,7 +3,7 @@
   "version": "0.1.7",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --name VueScrollCheck --target lib --inline-vue src/index.js",
+    "build": "vue-cli-service build --name VueScrollCheck --target lib --inline-vue src/main.js",
     "lint": "vue-cli-service lint"
   },
   "keywords": [
