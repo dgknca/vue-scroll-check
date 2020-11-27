@@ -3,7 +3,7 @@
   "version": "0.1.7",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --inline-vue --name VueScrollCheck src/index.js",
     "lint": "vue-cli-service lint"
   },
   "keywords": [
@@ -13,17 +13,18 @@
     "vue scroll bottom reach detect"
   ],
   "devDependencies": {
-    "vue": "^2.6.11",
-    "vue-highlightjs": "^1.3.3",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "bili": "^5.0.5",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-highlightjs": "^1.3.3",
     "vue-template-compiler": "^2.6.11"
   },
   "license": "MIT",

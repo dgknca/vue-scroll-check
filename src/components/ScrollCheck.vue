@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'ScrollCheck',
   props: {
     containerClass: {
       type: String,
