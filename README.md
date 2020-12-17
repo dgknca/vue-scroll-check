@@ -4,7 +4,7 @@ A simple component based on Vue.js. Detects if an element has scrolled to bottom
 
 ## Demo
 
-[Live Demo](https://vue-scroll-check.vercel.app/) | [Codesandbox](https://codesandbox.io/s/vue-scroll-check-6b3x0)
+[Live Demo](https://dgknca.github.io/vue-scroll-check/) | [Codesandbox](https://codesandbox.io/s/vue-scroll-check-6b3x0)
 
 ### Install
 
