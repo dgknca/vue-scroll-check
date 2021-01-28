@@ -7,7 +7,7 @@
     <div class="container">
       <div class="left">
         <pre v-highlightjs><code class="html">&lt;v-scroll-check
-  containerClass="my-container"
+  class="my-container"
   scrollAreaClass="list"
   :threshold="100"
   @onBottomReach="onBottomReach"
@@ -77,7 +77,7 @@ export default {
   <span style="color:#8a31b9">&lt;div</span> <span style="color:#da103f">class</span>=<span style="color:#1d8991">"list"</span><span style="color:#8a31b9">></span>...<span style="color:#8a31b9">&lt;/div></span>
 <span style="color:#8a31b9">&lt;/div></span></code></pre>
         <v-scroll-check
-          containerClass="my-container"
+          class="my-container"
           scrollAreaClass="list"
           :threshold="100"
           @onBottomReach="onBottomReach"

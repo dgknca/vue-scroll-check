@@ -18,7 +18,6 @@ npm i vue-scroll-check
 
 | Props           | Description                                          |  Type  | Default |
 | :-------------- | :--------------------------------------------------- | :----: | :-----: |
-| containerClass  | Classes of the component's root element.             | String |         |
 | scrollAreaClass | Classes of the component's scrollable child element. | String |         |
 | :threshold      | Threshold value of event change.                     | Number |    0    |
 

@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="[
-      containerClass,
-      { atTop: isAtTop, atBottom: isAtBottom, inMiddle: isInMiddle }
-    ]"
-  >
+  <div :class="{ atTop: isAtTop, atBottom: isAtBottom, inMiddle: isInMiddle }">
     <div :class="scrollAreaClass" @scroll="handleScroll">
       <slot></slot>
     </div>
@@ -15,10 +10,6 @@
 export default {
   name: 'ScrollCheck',
   props: {
-    containerClass: {
-      type: String,
-      default: ''
-    },
     scrollAreaClass: {
       type: String,
       default: ''
