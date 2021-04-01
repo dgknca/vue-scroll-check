@@ -32640,23 +32640,21 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
 var vue_runtime_esm = __webpack_require__("2b0e");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"6e8bcc40-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=2a487cc6&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4734cea6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=2a487cc6&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('link',{attrs:{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css"}}),_c('div',{staticClass:"container"},[_c('div',{staticClass:"left"},[_c('pre',{directives:[{name:"highlightjs",rawName:"v-highlightjs"}]},[_vm._m(0)])]),_c('div',{staticClass:"right"},[_c('pre',{staticClass:"demo-pre"},[_c('code',[_c('span',{staticStyle:{"color":"#8a31b9"}},[_vm._v("<div")]),_vm._v(" "),_c('span',{staticStyle:{"color":"#da103f"}},[_vm._v("class")]),_vm._v("="),_c('span',{staticStyle:{"color":"#1d8991"}},[_vm._v("\"my-container "+_vm._s(_vm.atTop)+_vm._s(_vm.atBottom)+_vm._s(_vm.inMiddle)+"\"")]),_c('span',{staticStyle:{"color":"#8a31b9"}},[_vm._v(">")]),_vm._v("\n  "),_c('span',{staticStyle:{"color":"#8a31b9"}},[_vm._v("<div")]),_vm._v(" "),_c('span',{staticStyle:{"color":"#da103f"}},[_vm._v("class")]),_vm._v("="),_c('span',{staticStyle:{"color":"#1d8991"}},[_vm._v("\"list\"")]),_c('span',{staticStyle:{"color":"#8a31b9"}},[_vm._v(">")]),_vm._v("..."),_c('span',{staticStyle:{"color":"#8a31b9"}},[_vm._v("</div>")]),_vm._v("\n"),_c('span',{staticStyle:{"color":"#8a31b9"}},[_vm._v("</div>")])])]),_c('v-scroll-check',{staticClass:"my-container",attrs:{"scrollAreaClass":"list","threshold":100},on:{"onBottomReach":_vm.onBottomReach,"onBottomLeave":_vm.onBottomLeave,"onTopReach":_vm.onTopReach,"onTopLeave":_vm.onTopLeave,"onMiddleEnter":_vm.onMiddleEnter,"onMiddleLeave":_vm.onMiddleLeave}},_vm._l((50),function(i){return _c('div',{key:i,staticClass:"item"},[_vm._v("Item "+_vm._s(i))])}),0)],1)])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('code',{staticClass:"html"},[_vm._v("<v-scroll-check\n  class=\"my-container\"\n  scrollAreaClass=\"list\"\n  :threshold=\"100\"\n  @onBottomReach=\"onBottomReach\"\n  @onBottomLeave=\"onBottomLeave\"\n  @onTopReach=\"onTopReach\"\n  @onTopLeave=\"onTopLeave\"\n  @onMiddleEnter=\"onMiddleEnter\"\n  @onMiddleLeave=\"onMiddleLeave\"\n>\n  <div class=\"item\" v-for=\"i in 50\" :key=\"i\">Item "),_c('span',[_vm._v("{")]),_vm._v("{ i }}</div>\n</v-scroll-check>\n\n<script>\nimport VScrollCheck from 'vue-scroll-check'\n\nexport default {\n  name: 'App',\n  components: {\n    VScrollCheck\n  },\n  methods: {\n    onBottomReach() {\n      console.log('onBottomReach')\n    },\n    onBottomLeave() {\n      console.log('onBottomLeave')\n    },\n    onTopReach() {\n      console.log('onTopReach')\n    },\n    onTopLeave() {\n      console.log('onTopLeave')\n    },\n    onMiddleEnter() {\n      console.log('onMiddleEnter')\n    },\n    onMiddleLeave() {\n      console.log('onMiddleLeave')\n    }\n  }\n}\n</script>\n\n<style>\n.list {\n  width: 300px;\n  box-shadow: 0 10px 20px rgba(#404040, 0.15);\n  border-radius: 10px;\n  background: #fff;\n  padding: 8px;\n  /* Don't forget that! The scrollAreaClass must be scrollable. */\n  height: 500px;\n  overflow: auto;\n}\n\n.item {\n  padding: 8px;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,\n  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n}\n</style>")])}]
 
 
 // CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=2a487cc6&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"6e8bcc40-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ScrollCheck.vue?vue&type=template&id=0ed89bfd&
-var ScrollCheckvue_type_template_id_0ed89bfd_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:[{ atTop: _vm.isAtTop, atBottom: _vm.isAtBottom, inMiddle: _vm.isInMiddle }]},[_c('div',{class:_vm.scrollAreaClass,on:{"scroll":_vm.handleScroll}},[_vm._t("default")],2)])}
-var ScrollCheckvue_type_template_id_0ed89bfd_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4734cea6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ScrollCheck.vue?vue&type=template&id=0f461bb6&
+var ScrollCheckvue_type_template_id_0f461bb6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:{ atTop: _vm.isAtTop, atBottom: _vm.isAtBottom, inMiddle: _vm.isInMiddle }},[_c('div',{class:_vm.scrollAreaClass,on:{"scroll":_vm.handleScroll}},[_vm._t("default")],2)])}
+var ScrollCheckvue_type_template_id_0f461bb6_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/ScrollCheck.vue?vue&type=template&id=0ed89bfd&
+// CONCATENATED MODULE: ./src/components/ScrollCheck.vue?vue&type=template&id=0f461bb6&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ScrollCheck.vue?vue&type=script&lang=js&
-//
-//
 //
 //
 //
@@ -32849,8 +32847,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_ScrollCheckvue_type_script_lang_js_,
-  ScrollCheckvue_type_template_id_0ed89bfd_render,
-  ScrollCheckvue_type_template_id_0ed89bfd_staticRenderFns,
+  ScrollCheckvue_type_template_id_0f461bb6_render,
+  ScrollCheckvue_type_template_id_0f461bb6_staticRenderFns,
   false,
   null,
   null,
